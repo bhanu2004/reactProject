@@ -1,38 +1,217 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container{
+  width: 100%;
   min-height: 100vh;
+}
+.header{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+.logoHeader{
+  font-size: 28px;
+  font-family: monospace;
+  padding: 20px 40px;
+}
+.headerIcon li{
+list-style: none;
+display: inline-block;
+padding: 20px;
+cursor: pointer;
+}
+.section1{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  background-size: cover;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  animation:slide 10s infinite linear;
+}
+.headi::before{
+  content: "";
+  animation:slideName 10s infinite linear;
+}
+.headi2::before{
+  animation:slideName2 10s infinite linear;
+  content: "";
+}
+.para::before{
+  content: "Organised by";
+}
+.para2::before{
+  content: "Health Logo";
+}
+@keyframes slide {
+  0%{
+      background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('./img/Finance1.png');
+      
+  }
+  55%{
+      background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('./img/moneyfinance-1.jpg');
+  }
+  100%{
+      background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('./img/finance3.jpg');
+  }
+}
+@keyframes slideName {
+  0%{
+      content: "Free Health";
+      
+  }
+  55%{
+      content:"Building a Just and";
+  }
+  100%{
+      content: "Respect to our";
+  }
+}
+@keyframes slideName2 {
+  0%{
+      content: "check-up";
+      
+  }
+  55%{
+      content:"Healthy Society ...";
+  }
+  100%{
+      content: "corona warriors...";
+  }
 }
 
-.App-link {
-  color: #61dafb;
+
+.section1 h2{
+  font-size: 68px;
+  font-family: sans-serif;
+  text-shadow: 2px 2px 4px black;
+  color: #fff;
+}
+.section1 p{
+  color: #fff;
+  padding: 8px;
+}
+.block1{
+  
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+}
+.block1 h1{
+  font-size: 32px;
+  line-height: 1.2;
+  font-family: Arial, Helvetica, sans-serif;
+  word-spacing: 10px;
+}
+.fa-solid{
+  font-size: 72px;
+  color: rgb(78, 72, 255);
+}
+.block2{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  /* height: 130px; */
+  box-shadow: 0px 0px 5px rgb(189, 189, 189);
+  margin: auto;
+  margin-top:50px;
+  background-color: rgba(219, 218, 218, 0.251);
+  padding: 20px 50px;
+  border-radius: 8px;
+}
+.block2 p{
+  text-align: center;
+}
+.stock img,.insurance img{
+  width: 100px;
+}
+.section3{
+  text-align: center;
+  background: white;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
+  width: 100%;
+  height: 110vh;
+}
+.line{
+  margin: auto;
+  margin-bottom: 30px;
+  height: 2px;
+  width: 60px;
+  background: rgb(211, 80, 28);
+}
+.section3 h1{
+  font-size: 48px;
+  padding: 50px 0 0 0;
+}
+.publication{
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top: 30px;
+  /* color: white; */
+  line-height: 18px;
+  
+}
+.publication h2{
+  padding-top: 80px;
+}
+.pub1,.pub2,.pub3{
+  width: 30%;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.pubImg{
+  width: 150px;
+  
+}
+.pubHead{
+  margin-bottom: 20px;
+}
+.section4{
+  
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+}
+.section4 h2{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.questn {
+  display: flex;
+  justify-content: space-between;
+}
+.questn button{
+  
+  height: 30px;
+  width: 30px;
+  background-color: rgba(224, 224, 224, 0.568);
+  text-align: center;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+}
+.paragraph{
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: solid 1px rgba(36,39,44,0.1);
 }
